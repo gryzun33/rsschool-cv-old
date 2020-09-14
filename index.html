@@ -11,65 +11,105 @@
       padding: 0;
     }
 
-		.container {
-			width: 600px;
-			margin: 0 auto;
+		.box {
+      display: flex;
+			width: 650px;
+			margin: 20px auto;
 			font-family: "PT Sans", Arial, Tahoma;
-			background-color: rgb(135, 206, 250);
+			border: 1px solid steelblue;
+      border-radius: 10px;
+      color:steelblue;
+      overflow: hidden;
+
 		}
 
 		#photo {
-			border: 1px solid gray;
+			border: 1px solid steelblue;
 			border-radius: 10px;
+      margin-top: 10px;
+      margin-right: 20px;
 		}
+
+    section {
+      margin-left: 20px;
+      margin-right: 15px;
+    }
+
+    h4 {
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      padding-left: 15px;
+    }
+
+    p, li {
+      font-size: 14px;
+    }
+
+    .person {      
+      margin-bottom: 5px;
+    }
+
+    #aside-line {
+      background-color: steelblue ;
+      width: 30px;
+    }
+
+    a {
+      color: steelblue; 
+    }
+
 
 	</style>
 </head>
 <body>
-  <main class="container">
+  <main class="box">
+    <div id="aside-line"></div>
+    <div>
 		<section style="display:flex">
 			<img id="photo" src="img/photo_2020-09-13 11.50.47.jpeg" alt="my photo" width="200">
 			<div>
-				<h3>Personal information</h3>
+				<h4>Personal information</h4>
 			<ul>
-				<li>Name: <strong>Olga Yakusheva</strong></li>
-				<li>Address: 3 Denisovskaja Street, apt.805, Minsk, 220006, Belarus </li>
-				<li>Phone Number: +375(29)789-32-74 </li>
-				<li>Marital Status: married</li>
-				<li>Date of birth: 18th April 1987</li>
-				<li>Email: yakushevao777@gmail.com</li>
+				<li class="person">Name: <strong>Olga Yakusheva</strong></li>
+				<li class="person">Address: 3 Denisovskaja Street, apt.805, Minsk, 220006, Belarus </li>
+				<li class="person">Phone Number: +375(29)789-32-74 </li>
+				<li class="person">Marital status: married</li>
+				<li class="person">Date of birth: 18th April 1987</li>
+				<li class="person">Email: yakushevao777@gmail.com</li>
 			</ul>
 			</div>
 		</section>
 		<section>
-      <h3>Objective</h3>
+      <h4>Objective</h4>
       <p>Frontend developer</p>
     </section>
     <section>
-      <h3>Education</h3>
+      <h4>Education</h4>
       <ul>
         <li>Belarusian Nationed Technical University,</br>     
           Power Engineering Faculty, 2005-2010, diploma with honour</li>
           <br>
-        <li>In programming: self-education, Udemy online-courses, learn.javascript.ru</li>
+        <li>In programming: self-education, Udemy online-courses, <a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
       </ul>    
     </section>
     <section>
-      <h3>Special skills</h3>
+      <h4>Special skills</h4>
       <ul>
         <li>HTML, CSS, Git, JavaScript, VSCode</li>
-        <li>English: pre-intermediate, practice on lingualeo.com</li>
+        <li>English: pre-intermediate, practice on <a href="https://lingualeo.com/ru/dashboard">lingualeo.com</a></li>
       </ul>
     </section>
     <section>
-      <h3>Experience</h3>
-      <p>Сoding tests (codewars.com, w3schools.com), projects from courses</p>
+      <h4>Experience</h4>
+      <p>Сoding tests (<a href="https://www.codewars.com/dashboard">codewars.com</a>, <a href="https://www.w3schools.com/">w3schools.com</a>), projects from courses</p>
     </section>
     <section>
-      <h3>Personal qualities</h3>
-      <p>Conscientious, сommunicative, highly orginized and detail-oriented</p>
-    </section>
-    <br>
+      <h4>Personal qualities</h4>
+      <p>Conscientious, сommunicative, highly organized and detail-oriented</p>
+    </section>  
+  </div>
 	</main>  
 </body>
 </html>
